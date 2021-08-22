@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_preload_videos/video_page.dart';
 
 import 'bloc/preload_bloc.dart';
+import 'video_page.dart';
 
 void main() {
   runApp(const MyApp());
