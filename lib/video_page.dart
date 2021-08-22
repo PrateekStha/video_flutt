@@ -19,10 +19,9 @@ class VideoPage extends StatelessWidget {
             onPageChanged: (index) => BlocProvider.of<PreloadBloc>(context)
                 .add(PreloadEvent.onVideoIndexChanged(index)),
             itemBuilder: (context, index) {
-              return state.focusedIndex == index
-                  ? 
-                  AspectRatio(aspectRatio: state.controllers[index]!.value.aspectRatio,child: VideoPlayer(state.controllers[index]!))
-                  :  SizedBox(child:Container(child:VideoPlayer(state.controllers[index]!)));
+              return 
+             
+                    SizedBox(child:Container(child:VideoPlayer(state.controllers[index]!)));
             },
           );
         },
